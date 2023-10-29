@@ -1,0 +1,103 @@
+    // Classe abstrata Animal
+public abstract class Animal {
+    // Atributos de todos os animais
+    private String nome;
+    private int idade;
+    private double peso;
+  
+    // Construtor da classe Animal
+    public Animal(String nome, int idade, double peso) {
+      this.nome = nome;
+      this.idade = idade;
+      this.peso = peso;
+    }
+  
+    // Métodos getters e setters
+    public String getNome() {
+      return nome;
+    }
+  
+    public void setNome(String nome) {
+      this.nome = nome;
+    }
+  
+    public int getIdade() {
+      return idade;
+    }
+  
+    public void setIdade(int idade) {
+      this.idade = idade;
+    }
+  
+    public double getPeso() {
+      return peso;
+    }
+  
+    public void setPeso(double peso) {
+      this.peso = peso;
+    }
+  
+    // Métodos abstratos
+    public abstract String som();
+    public abstract void comer();
+    public abstract void dormir();
+  }
+  
+  // Interface Brincar
+  public interface Brincar {
+    // Método abstrato que deve ser implementado pelas classes que implementam a interface
+    public void brincar();
+  }
+  
+     // Classe abstrata Animal
+public abstract class Animal {
+    // Atributos de todos os animais
+    private String nome;
+    private int idade;
+    private double peso;
+  
+    // Construtor da classe Animal
+    public Animal(String nome, int idade, double peso) {
+      this.nome = nome;
+      this.idade = idade;
+      this.peso = peso;
+    }
+  
+    // Métodos getters e setters
+    public String getNome() {
+      return nome;
+    }
+  
+    public void setNome(String nome) {
+      this.nome = nome;
+    }
+  
+    public int getIdade() {
+      return idade;
+    }
+  
+    public void setIdade(int idade) {
+      this.idade = idade;
+    }
+  
+    public double getPeso() {
+      return peso;
+    }
+  
+    public void setPeso(double peso) {
+      this.peso = peso;
+    }
+  
+    // Métodos abstratos
+    public abstract String som();
+    public abstract void comer();
+    public abstract void dormir();
+  }
+  
+  // Interface Brincar
+  public interface Brincar {
+    // Método abstrato que deve ser implementado pelas classes que implementam a interface
+    public void brincar();
+  }
+  
+ 
