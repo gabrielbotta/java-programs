@@ -1,0 +1,30 @@
+public class Pássaro extends Animal implements Brincar {
+    // Construtor da classe Pássaro
+    public Pássaro(String nome, int idade, double peso) {
+      super(nome, idade, peso); // Chamando o construtor da superclasse
+    }
+  
+    // Sobrescrevendo o método som da classe Animal
+    
+    public String som() {
+      return "Piu piu";
+    }
+  
+    // Sobrescrevendo o método comer da classe Animal
+    
+    public void comer() {
+      System.out.println("O pássaro " + getNome() + " está comendo sementes.");
+    }
+  
+     // Sobrescrevendo o método dormir da classe Animal
+     
+     public void dormir() {
+       System.out.println("O pássaro " + getNome() + " está dormindo no ninho.");
+     }
+   
+     // Implementando o método brincar da interface Brincar
+     
+     public void brincar() {
+       System.out.println("O pássaro " + getNome() + " está brincando com as penas.");
+     }
+    }
