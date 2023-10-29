@@ -1,0 +1,31 @@
+ // Classe Cachorro que herda da classe Animal e implementa a interface Brincar
+  public class Cachorro extends Animal implements Brincar {
+    // Construtor da classe Cachorro
+    public Cachorro(String nome, int idade, double peso) {
+      super(nome, idade, peso); // Chamando o construtor da superclasse
+    }
+  
+    // Sobrescrevendo o método som da classe Animal
+    
+    public String som() {
+      return "Au au";
+    }
+  
+    // Sobrescrevendo o método comer da classe Animal
+    
+    public void comer() {
+      System.out.println("O cachorro " + getNome() + " está comendo ração.");
+    }
+  
+    // Sobrescrevendo o método dormir da classe Animal
+    
+    public void dormir() {
+      System.out.println("O cachorro " + getNome() + " está dormindo zzzzZZZzzz.");
+    }
+  
+    // Implementando o método brincar da interface Brincar
+    
+    public void brincar() {
+      System.out.println("O cachorro " + getNome() + " está brincando com a bola.");
+    }
+  }
