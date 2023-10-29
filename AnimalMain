@@ -1,0 +1,23 @@
+
+// Classe principal que cria um array de objetos do tipo Animal e invoca os métodos definidos na classe abstrata e na interface para cada objeto
+public class AnimalMain {
+    public static void main(String[] args) {
+      // Criando um array de objetos do tipo Animal
+      Animal[] animais = new Animal[3];
+      animais[0] = new Cachorro("Mel", 5, 10.0);
+      animais[1] = new Gato("Nina", 3, 4.0);
+      animais[2] = new Pássaro("Mordecai", 2, 0.5);
+  
+        // Percorrendo o array e invocando os métodos para cada objeto
+        for (Animal animal : animais) {
+            System.out.println("Nome: " + animal.getNome());
+            System.out.println("Idade: " + animal.getIdade());
+            System.out.println("Peso: " + animal.getPeso());
+            System.out.println("Som: " + animal.som());
+            animal.comer();
+            animal.dormir();
+            ((Brincar)animal).brincar(); // Fazendo um cast explícito para o tipo Brincar
+            System.out.println();
+        }
+    }
+}
