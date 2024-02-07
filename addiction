@@ -1,0 +1,27 @@
+
+package addiction;
+import javax.swing.JOptionPane;
+
+public class Addiction {
+
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        //obtem a entrada do usuario a partir dos dialogos de entrada da JOptionPane
+        String firstNumber =
+                JOptionPane.showInputDialog("enter first integer: ");
+        String secondNumber =
+                JOptionPane.showInputDialog("enter second integer: ");
+        
+        //converte string em valores int para serem utilizados em calculos
+        int number1 = Integer.parseInt( firstNumber );
+        int number2 = Integer.parseInt( secondNumber );
+        
+        int sum = number1 + number2; //soma os numeros
+        
+        //exibe o resultado em um dialogo de mensagem JOptionPane
+        JOptionPane.showMessageDialog(null,"The sum is "+sum, "Sum of Two Integers", JOptionPane.PLAIN_MESSAGE);
+        
+    }//FIM DO METODO MAIN
+    
+}//FIM DA CLASSE ADDITION
